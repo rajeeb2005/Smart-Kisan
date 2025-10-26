@@ -1,0 +1,102 @@
+.demo-mode-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  z-index: 1000;
+  max-width: 300px;
+}
+
+.demo-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.demo-label {
+  font-weight: 500;
+  color: var(--dark-color);
+}
+
+.demo-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-icon {
+  font-size: 1.8rem;
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+
+.toggle-icon.active {
+  color: var(--primary-color);
+}
+
+.info-icon {
+  color: #888;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.info-icon:hover {
+  color: var(--primary-color);
+}
+
+.demo-info {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.demo-info h4 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.demo-info p, .demo-info ul {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.demo-info ul {
+  padding-left: 20px;
+}
+
+.demo-info li {
+  margin-bottom: 5px;
+}
+
+.demo-note {
+  font-size: 0.8rem;
+  color: #888;
+  font-style: italic;
+}
+
+.demo-badge {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: var(--primary-light);
+  color: var(--primary-color);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .demo-mode-container {
+    bottom: 10px;
+    right: 10px;
+    max-width: 250px;
+  }
+}

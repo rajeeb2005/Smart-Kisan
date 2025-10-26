@@ -1,0 +1,204 @@
+.pesticides-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pesticides-title {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.filters-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.filter-group label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: var(--dark-color);
+}
+
+.filter-select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: white;
+  font-size: 1rem;
+}
+
+.pesticides-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.pesticide-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.pesticide-card:hover {
+  transform: translateY(-5px);
+}
+
+.pesticide-header {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.pesticide-type {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.pesticide-type:contains("Fungicide") {
+  background-color: #e6f7ff;
+  color: #0066cc;
+}
+
+.pesticide-type:contains("Insecticide") {
+  background-color: #fff2e6;
+  color: #ff6600;
+}
+
+.pesticide-type:contains("Herbicide") {
+  background-color: #e6ffe6;
+  color: #009900;
+}
+
+.pesticide-name {
+  margin: 0;
+  color: var(--dark-color);
+}
+
+.pesticide-content {
+  padding: 15px;
+  display: flex;
+}
+
+.pesticide-image-container {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.pesticide-icon {
+  font-size: 2.5rem;
+}
+
+.fungicide {
+  color: #0066cc;
+}
+
+.insecticide {
+  color: #ff6600;
+}
+
+.herbicide {
+  color: #009900;
+}
+
+.pesticide-details {
+  flex: 1;
+}
+
+.pesticide-target {
+  margin-bottom: 10px;
+}
+
+.pesticide-target ul {
+  margin: 5px 0 0 20px;
+  padding: 0;
+}
+
+.pesticide-description {
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.pesticide-application, .pesticide-safety {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.pesticide-cost {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.cost-icon {
+  color: #28a745;
+  margin-right: 5px;
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  color: #555;
+}
+
+.pesticide-disclaimer {
+  background-color: #fff2e6;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.pesticide-disclaimer h3 {
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+
+.pesticide-disclaimer p {
+  margin: 0;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .filters-container {
+    flex-direction: column;
+  }
+  
+  .filter-group {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .pesticides-list {
+    grid-template-columns: 1fr;
+  }
+}

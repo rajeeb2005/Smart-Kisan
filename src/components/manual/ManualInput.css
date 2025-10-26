@@ -1,0 +1,98 @@
+.manual-input {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.manual-input h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.manual-input.disabled {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.manual-instructions {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #34495e;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.submit-button, .reset-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.submit-button {
+  background-color: #27ae60;
+  color: white;
+  flex: 2;
+}
+
+.submit-button:hover {
+  background-color: #2ecc71;
+}
+
+.reset-button {
+  background-color: #e74c3c;
+  color: white;
+  flex: 1;
+}
+
+.reset-button:hover {
+  background-color: #c0392b;
+}
+
+.demo-mode-notice {
+  background-color: #f8f9fa;
+  border-left: 4px solid #3498db;
+  padding: 10px 15px;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .manual-input {
+    padding: 10px;
+  }
+  
+  .button-group {
+    flex-direction: column;
+  }
+}

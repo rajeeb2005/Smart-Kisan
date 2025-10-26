@@ -1,0 +1,85 @@
+.irrigation-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.irrigation-title {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.water-tank-container {
+  text-align: center;
+}
+
+.water-tank {
+  width: 100%;
+  height: 200px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.water-level {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #2196F3;
+  transition: height 1s ease;
+}
+
+.water-percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.irrigation-controls {
+  padding: 0 15px;
+}
+
+.irrigation-info {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.irrigation-animation {
+  position: relative;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.water-droplet {
+  position: absolute;
+  width: 10px;
+  height: 15px;
+  background-color: #2196F3;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  animation: droplet 2s infinite;
+  top: 0;
+}
+
+@keyframes droplet {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(80px) scale(0.5);
+    opacity: 0;
+  }
+}

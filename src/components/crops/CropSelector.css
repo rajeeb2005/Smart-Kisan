@@ -1,0 +1,72 @@
+.crop-selector {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.crop-selector h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.crop-select-container {
+  margin-bottom: 15px;
+}
+
+.crop-select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  font-size: 1rem;
+  color: #333;
+}
+
+.selected-crop-display {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.crop-icon {
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.crop-icon.wheat {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23f0c419"><path d="M12,2L9,6L9,11L5,15L5,21L19,21L19,15L15,11L15,6L12,2Z"/></svg>');
+}
+
+.crop-icon.rice {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2327ae60"><path d="M12,2C9,2 6,3 4,5L4,9C4,10 5,11 6,11L7,11L7,12C7,13 8,14 9,14L9,15C9,16 10,17 11,17L13,17C14,17 15,16 15,15L15,14C16,14 17,13 17,12L17,11L18,11C19,11 20,10 20,9L20,5C18,3 15,2 12,2Z"/></svg>');
+}
+
+.crop-icon.corn {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23f1c40f"><path d="M11,6H13V20H11V6M15,5H17V20H15V5M7,8H9V20H7V8M19,4H21V20H19V4M3,12H5V20H3V12Z"/></svg>');
+}
+
+.crop-icon.cotton {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ecf0f1"><path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z"/></svg>');
+}
+
+.crop-icon.sugarcane {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%238e44ad"><path d="M15,3H9V21H15V3M10,4H14V20H10V4Z"/></svg>');
+}
+
+@media (max-width: 768px) {
+  .crop-selector {
+    padding: 10px;
+  }
+  
+  .crop-select {
+    font-size: 0.9rem;
+  }
+}
